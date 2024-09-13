@@ -19,8 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-
-      - uses: aws-actions/configure-aws-credentials@v3
+      - uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::559050232093:role/udemy-github-actions-frontend-deployment-role
           aws-region: ap-northeast-1
